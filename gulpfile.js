@@ -33,16 +33,16 @@ gulp.task('sass', function() {
     .pipe($.cssmin({keepSpecialComments: '1'}))
     .pipe(gulp.dest('./'))
     .pipe($.notify({message: 'Styles are complete'}))
-    // .pipe($.livereload());
+    .pipe($.livereload())
     .pipe(browserSync.stream());
 });
 
-gulp.task('default', ['sass'], function() {
+gulp.task('default', ['copy:images','sass'], function() {
     // Create LiveReload server
   $.livereload.listen();
 
   // Watch any files in dist/, reload on change
-  gulp.watch( './**/*.html' ).on( 'change', function( file ) {
+  gulp.watch( './**/*.php' ).on( 'change', function( file ) {
     // reload browser whenever any PHP file changes
     $.livereload.changed( file );
   });
@@ -57,6 +57,17 @@ gulp.task('serve', ['sass'], function() {
       baseDir:'./'
     }
   });
-
   gulp.watch(['src/scss/**/*.scss'], ['sass']);
+});
+
+gulp.task('copy:images', function(){
+  return gulp.src('./src/images/**/*.{png,jpg,gif,svg}')
+  .pipe(gulp.dest('./dist/images'));
+});
+
+gulp.task('clean', function () {
+  var del = require('del');
+  return del([
+    'dist/**'
+  ]);
 });
