@@ -85,7 +85,7 @@ input[type="submit"] {
 .main-banner-bg {
   border-top: 8px solid $red;
   background-color: $dark-blue;
-  background: url('../../src/images/main-banner-bg.jpg') no-repeat top left;
+  background: url('../../dist/images/main-banner-bg.jpg') no-repeat top left;
   background-size: cover;
   min-height: 580px;
 }
@@ -173,15 +173,15 @@ input[type="submit"] {
   margin-bottom: .25rem;
 }
 .icon-facebook {
-  background: url('../../src/images/icon-fb.png') no-repeat 0 2px;
+  background: url('../../dist/images/icon-fb.png') no-repeat 0 2px;
   padding-left: 23px;
 }
 .icon-email {
-  background: url('../../src/images/icon-email.png') no-repeat 0 3px;
+  background: url('../../dist/images/icon-email.png') no-repeat 0 3px;
   padding-left: 28px;
 }
 .icon-fone {
-  background: url('../../src/images/icon-phone.png') no-repeat 0 0px;
+  background: url('../../dist/images/icon-phone.png') no-repeat 0 0px;
   padding-left: 18px;
 }
 .footer {
@@ -198,5 +198,5 @@ input[type="submit"] {
 .photo-julio {
   width: 142px;
   margin: .5rem auto 1rem auto;
-  display: block;
+  display: block;  
 }

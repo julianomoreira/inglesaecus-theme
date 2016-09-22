@@ -12,14 +12,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inglês Aecus</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,400i,600,600i" rel="stylesheet">
-    <link rel="stylesheet" href="dist/css/style.css">
+    <link href="<?php bloginfo('stylesheet_directory'); ?>/dist/css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="row">
       <div class="large-12 columns main-banner-bg">
         <div class="row">
           <div class="large-10 large-offset-2 large-centered .small-offset-3 columns main-banner">
-            <img src="src/images/logo-aecus.png" alt="Inglês Aecus" class="logo" />
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/dist/images/logo-aecus.png" alt="Inglês Aecus" class="logo" />
             <h2 class="main-message">A escola pra quem quer estar na frente.</h2>
             <p class="main-message-desc">Você pensou no que pode acontecer em um ano? Em simplesmente um ano, você alcaçará objetivos jamais imaginados. Aprender inglês na Escola Aecus irá transformar sua vida. Acredite em você!  Junta-se a centenas de pessoas que foram transformadas atravês da escola Inglês Aecus.</p>
             <div class="row align-middle">
@@ -68,7 +68,7 @@
           </div>
           <div class="large-4 columns right-col">
             <div class="">
-              <img src="src/images/photo-julio.png" alt="Foto de Julio Bernardino, diretor aecus" class="photo-julio" />
+              <img src="<?php bloginfo('stylesheet_directory'); ?>/dist/images/photo-julio.png" alt="Foto de Julio Bernardino, diretor aecus" class="photo-julio" />
               <h4 class="subsection-title">Julio Bernardino, diretor</h4>
               <p>Lorem ipsum Curabitur diam a felis facilisis. Diam ornare. Velit in. Vitae Morbi volutpat mi In vestibulum lorem, a felis. Vestibulum Proin eu. Accumsan at tincidunt metus vel pellentesque. Amet.</p>
               <hr />
